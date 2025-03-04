@@ -1,5 +1,5 @@
 # README
-
+## 该项目仍在开发，目前作为存储仓库使用，请勿下载使用。
 ## 项目概述
 本项目旨在处理C/C++源代码文件，通过静态分析生成控制流图（CPG）和程序依赖图（PDG），并进一步提取API信息、漏洞API标识以及方法调用链。项目主要包含以下功能模块：
 1. **路径初始化与预处理**：清理注释，生成Scala脚本文件。
@@ -105,8 +105,7 @@ slice_test/
 
 ## 联系方式
 如有问题，请联系项目维护者：
-- 邮箱: example@example.com
-- GitHub: [项目地址](https://github.com/example/slice_test)
+- 邮箱: wenboz017311@gmail.com
 
 --- 
 
