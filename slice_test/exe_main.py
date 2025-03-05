@@ -17,13 +17,15 @@ sc_path = os.path.join(work_path, "sc\\bad.sc")
 file_name, _ = os.path.splitext(os.path.basename(file_path))
 
 # step0:初始化工作路径，删除注释，生成sc文件
-path_init = init.PathInitializer(s01_path, file_name)
+# path_init = init.PathInitializer(s01_path, file_name)
 # init.check_path(path_init)
 # init.remove_comments_c(file_path)
-cpg_path = path_init.get_cpg_path()
-pdg_path = path_init.get_pdg_path()
+# cpg_path = path_init.get_cpg_path()
+# pdg_path = path_init.get_pdg_path()
+cpg_path = "data/bad_cpg.json"
+pdg_path = "data/bad_txt_pdg.txt"
 # step1:执行sc文件
-exe_sc.exc_scala(sc_path, file_path)
+# exe_sc.exc_scala(sc_path, file_path)
 
 # step2:处理cpg，pdg信息
 # sub_step1:处理cpg信息，获取cpg_nodes
