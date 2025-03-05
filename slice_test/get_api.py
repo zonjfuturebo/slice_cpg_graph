@@ -25,7 +25,7 @@ def get_vul_api_id(api_info):  #
 def get_all_api(api_path):
     api_info = {}
     with open(api_path, 'r') as file:
-        content = file.read().replace("]\n[", ",\n")
+        content = file.read().replace("]\n[", ",\n")  # 规范json格式
         data = json.loads(content)  # data type: list
     for api in data:
         api_info[(api["_3"], api["_1"])] = {"id": api["_1"], "lineNumber": api["_2"], "code": api["_4"],

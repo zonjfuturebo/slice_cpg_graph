@@ -23,7 +23,6 @@ def parse_dot_content(pdg_path):
 
         for match in matches:
             source, target, label, code = match
-            print(source, target, label, code)
             edges.append((source, target, {"label": label, "code": code}))
 
     return nodes, edges
