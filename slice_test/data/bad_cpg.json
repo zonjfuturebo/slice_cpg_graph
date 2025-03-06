@@ -69,6 +69,132 @@
     "argumentIndex":-1
   },
   {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "_id":25769803780,
+    "code":"<empty>",
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"BLOCK",
+    "possibleTypes":[
+      
+    ],
+    "argumentIndex":1
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "_id":25769803781,
+    "code":"<empty>",
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"BLOCK",
+    "possibleTypes":[
+      
+    ],
+    "argumentIndex":1
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "_id":25769803782,
+    "code":"<empty>",
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"BLOCK",
+    "possibleTypes":[
+      
+    ],
+    "argumentIndex":1
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "_id":25769803783,
+    "code":"<empty>",
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"BLOCK",
+    "possibleTypes":[
+      
+    ],
+    "argumentIndex":1
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "_id":25769803784,
+    "code":"<empty>",
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"BLOCK",
+    "possibleTypes":[
+      
+    ],
+    "argumentIndex":1
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "_id":25769803785,
+    "code":"<empty>",
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"BLOCK",
+    "possibleTypes":[
+      
+    ],
+    "argumentIndex":1
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "_id":25769803786,
+    "code":"<empty>",
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"BLOCK",
+    "possibleTypes":[
+      
+    ],
+    "argumentIndex":1
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "_id":25769803787,
+    "code":"<empty>",
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"BLOCK",
+    "possibleTypes":[
+      
+    ],
+    "argumentIndex":1
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "_id":25769803788,
+    "code":"<empty>",
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"BLOCK",
+    "possibleTypes":[
+      
+    ],
+    "argumentIndex":1
+  },
+  {
     "name":"<operator>.assignment",
     "_id":30064771072,
     "signature":"",
@@ -432,6 +558,14 @@
     "_id":60129542145,
     "code":"<empty>",
     "order":1,
+    "content":"<empty>",
+    "_label":"FILE"
+  },
+  {
+    "name":"<unknown>",
+    "_id":60129542146,
+    "code":"<empty>",
+    "order":0,
     "content":"<empty>",
     "_label":"FILE"
   },
@@ -875,7 +1009,11 @@
     "language":"NEWC",
     "_label":"META_DATA",
     "overlays":[
-      
+      "base",
+      "controlflow",
+      "typerel",
+      "callgraph",
+      "dataflowOss"
     ],
     "root":"/root/cwe121_test/bad.c"
   },
@@ -931,6 +1069,524 @@
     "filename":"<includes>"
   },
   {
+    "name":"<operator>.assignment",
+    "astParentFullName":"<global>",
+    "_id":111669149699,
+    "signature":"",
+    "astParentType":"NAMESPACE_BLOCK",
+    "_label":"METHOD",
+    "fullName":"<operator>.assignment",
+    "genericSignature":"<empty>",
+    "code":"<empty>",
+    "isExternal":true,
+    "order":0,
+    "filename":"<empty>"
+  },
+  {
+    "name":"<operator>.indirection",
+    "astParentFullName":"<global>",
+    "_id":111669149700,
+    "signature":"",
+    "astParentType":"NAMESPACE_BLOCK",
+    "_label":"METHOD",
+    "fullName":"<operator>.indirection",
+    "genericSignature":"<empty>",
+    "code":"<empty>",
+    "isExternal":true,
+    "order":0,
+    "filename":"<empty>"
+  },
+  {
+    "name":"<operator>.addition",
+    "astParentFullName":"<global>",
+    "_id":111669149701,
+    "signature":"",
+    "astParentType":"NAMESPACE_BLOCK",
+    "_label":"METHOD",
+    "fullName":"<operator>.addition",
+    "genericSignature":"<empty>",
+    "code":"<empty>",
+    "isExternal":true,
+    "order":0,
+    "filename":"<empty>"
+  },
+  {
+    "name":"printLine",
+    "astParentFullName":"<global>",
+    "_id":111669149702,
+    "signature":"",
+    "astParentType":"NAMESPACE_BLOCK",
+    "_label":"METHOD",
+    "fullName":"printLine",
+    "genericSignature":"<empty>",
+    "code":"<empty>",
+    "isExternal":true,
+    "order":0,
+    "filename":"<empty>"
+  },
+  {
+    "name":"memcpy",
+    "astParentFullName":"<global>",
+    "_id":111669149703,
+    "signature":"",
+    "astParentType":"NAMESPACE_BLOCK",
+    "_label":"METHOD",
+    "fullName":"memcpy",
+    "genericSignature":"<empty>",
+    "code":"<empty>",
+    "isExternal":true,
+    "order":0,
+    "filename":"<empty>"
+  },
+  {
+    "name":"<operator>.addressOf",
+    "astParentFullName":"<global>",
+    "_id":111669149704,
+    "signature":"",
+    "astParentType":"NAMESPACE_BLOCK",
+    "_label":"METHOD",
+    "fullName":"<operator>.addressOf",
+    "genericSignature":"<empty>",
+    "code":"<empty>",
+    "isExternal":true,
+    "order":0,
+    "filename":"<empty>"
+  },
+  {
+    "name":"<operator>.xor",
+    "astParentFullName":"<global>",
+    "_id":111669149705,
+    "signature":"",
+    "astParentType":"NAMESPACE_BLOCK",
+    "_label":"METHOD",
+    "fullName":"<operator>.xor",
+    "genericSignature":"<empty>",
+    "code":"<empty>",
+    "isExternal":true,
+    "order":0,
+    "filename":"<empty>"
+  },
+  {
+    "name":"<operator>.equals",
+    "astParentFullName":"<global>",
+    "_id":111669149706,
+    "signature":"",
+    "astParentType":"NAMESPACE_BLOCK",
+    "_label":"METHOD",
+    "fullName":"<operator>.equals",
+    "genericSignature":"<empty>",
+    "code":"<empty>",
+    "isExternal":true,
+    "order":0,
+    "filename":"<empty>"
+  },
+  {
+    "name":"__stack_chk_fail",
+    "astParentFullName":"<global>",
+    "_id":111669149707,
+    "signature":"",
+    "astParentType":"NAMESPACE_BLOCK",
+    "_label":"METHOD",
+    "fullName":"__stack_chk_fail",
+    "genericSignature":"<empty>",
+    "code":"<empty>",
+    "isExternal":true,
+    "order":0,
+    "filename":"<empty>"
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "name":"p1",
+    "_id":115964116992,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"METHOD_PARAMETER_IN",
+    "possibleTypes":[
+      
+    ],
+    "index":1,
+    "code":"p1"
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "name":"p2",
+    "_id":115964116993,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "typeFullName":"ANY",
+    "order":2,
+    "_label":"METHOD_PARAMETER_IN",
+    "possibleTypes":[
+      
+    ],
+    "index":2,
+    "code":"p2"
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "name":"p1",
+    "_id":115964116994,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"METHOD_PARAMETER_IN",
+    "possibleTypes":[
+      
+    ],
+    "index":1,
+    "code":"p1"
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "name":"p1",
+    "_id":115964116995,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"METHOD_PARAMETER_IN",
+    "possibleTypes":[
+      
+    ],
+    "index":1,
+    "code":"p1"
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "name":"p2",
+    "_id":115964116996,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "typeFullName":"ANY",
+    "order":2,
+    "_label":"METHOD_PARAMETER_IN",
+    "possibleTypes":[
+      
+    ],
+    "index":2,
+    "code":"p2"
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "name":"p1",
+    "_id":115964116997,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"METHOD_PARAMETER_IN",
+    "possibleTypes":[
+      
+    ],
+    "index":1,
+    "code":"p1"
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "name":"p1",
+    "_id":115964116998,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"METHOD_PARAMETER_IN",
+    "possibleTypes":[
+      
+    ],
+    "index":1,
+    "code":"p1"
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "name":"p2",
+    "_id":115964116999,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "typeFullName":"ANY",
+    "order":2,
+    "_label":"METHOD_PARAMETER_IN",
+    "possibleTypes":[
+      
+    ],
+    "index":2,
+    "code":"p2"
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "name":"p3",
+    "_id":115964117000,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "typeFullName":"ANY",
+    "order":3,
+    "_label":"METHOD_PARAMETER_IN",
+    "possibleTypes":[
+      
+    ],
+    "index":3,
+    "code":"p3"
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "name":"p1",
+    "_id":115964117001,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"METHOD_PARAMETER_IN",
+    "possibleTypes":[
+      
+    ],
+    "index":1,
+    "code":"p1"
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "name":"p1",
+    "_id":115964117002,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"METHOD_PARAMETER_IN",
+    "possibleTypes":[
+      
+    ],
+    "index":1,
+    "code":"p1"
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "name":"p2",
+    "_id":115964117003,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "typeFullName":"ANY",
+    "order":2,
+    "_label":"METHOD_PARAMETER_IN",
+    "possibleTypes":[
+      
+    ],
+    "index":2,
+    "code":"p2"
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "name":"p1",
+    "_id":115964117004,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"METHOD_PARAMETER_IN",
+    "possibleTypes":[
+      
+    ],
+    "index":1,
+    "code":"p1"
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "name":"p2",
+    "_id":115964117005,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "typeFullName":"ANY",
+    "order":2,
+    "_label":"METHOD_PARAMETER_IN",
+    "possibleTypes":[
+      
+    ],
+    "index":2,
+    "code":"p2"
+  },
+  {
+    "name":"p1",
+    "_id":120259084288,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "code":"p1",
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"METHOD_PARAMETER_OUT",
+    "index":1
+  },
+  {
+    "name":"p2",
+    "_id":120259084289,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "code":"p2",
+    "typeFullName":"ANY",
+    "order":2,
+    "_label":"METHOD_PARAMETER_OUT",
+    "index":2
+  },
+  {
+    "name":"p1",
+    "_id":120259084290,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "code":"p1",
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"METHOD_PARAMETER_OUT",
+    "index":1
+  },
+  {
+    "name":"p1",
+    "_id":120259084291,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "code":"p1",
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"METHOD_PARAMETER_OUT",
+    "index":1
+  },
+  {
+    "name":"p2",
+    "_id":120259084292,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "code":"p2",
+    "typeFullName":"ANY",
+    "order":2,
+    "_label":"METHOD_PARAMETER_OUT",
+    "index":2
+  },
+  {
+    "name":"p1",
+    "_id":120259084293,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "code":"p1",
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"METHOD_PARAMETER_OUT",
+    "index":1
+  },
+  {
+    "name":"p1",
+    "_id":120259084294,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "code":"p1",
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"METHOD_PARAMETER_OUT",
+    "index":1
+  },
+  {
+    "name":"p2",
+    "_id":120259084295,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "code":"p2",
+    "typeFullName":"ANY",
+    "order":2,
+    "_label":"METHOD_PARAMETER_OUT",
+    "index":2
+  },
+  {
+    "name":"p3",
+    "_id":120259084296,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "code":"p3",
+    "typeFullName":"ANY",
+    "order":3,
+    "_label":"METHOD_PARAMETER_OUT",
+    "index":3
+  },
+  {
+    "name":"p1",
+    "_id":120259084297,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "code":"p1",
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"METHOD_PARAMETER_OUT",
+    "index":1
+  },
+  {
+    "name":"p1",
+    "_id":120259084298,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "code":"p1",
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"METHOD_PARAMETER_OUT",
+    "index":1
+  },
+  {
+    "name":"p2",
+    "_id":120259084299,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "code":"p2",
+    "typeFullName":"ANY",
+    "order":2,
+    "_label":"METHOD_PARAMETER_OUT",
+    "index":2
+  },
+  {
+    "name":"p1",
+    "_id":120259084300,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "code":"p1",
+    "typeFullName":"ANY",
+    "order":1,
+    "_label":"METHOD_PARAMETER_OUT",
+    "index":1
+  },
+  {
+    "name":"p2",
+    "_id":120259084301,
+    "evaluationStrategy":"BY_VALUE",
+    "isVariadic":false,
+    "code":"p2",
+    "typeFullName":"ANY",
+    "order":2,
+    "_label":"METHOD_PARAMETER_OUT",
+    "index":2
+  },
+  {
     "dynamicTypeHintFullName":[
       
     ],
@@ -975,6 +1631,139 @@
     "possibleTypes":[
       
     ]
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "_id":128849018883,
+    "evaluationStrategy":"BY_VALUE",
+    "code":"RET",
+    "typeFullName":"ANY",
+    "order":2,
+    "_label":"METHOD_RETURN",
+    "possibleTypes":[
+      
+    ]
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "_id":128849018884,
+    "evaluationStrategy":"BY_VALUE",
+    "code":"RET",
+    "typeFullName":"ANY",
+    "order":2,
+    "_label":"METHOD_RETURN",
+    "possibleTypes":[
+      
+    ]
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "_id":128849018885,
+    "evaluationStrategy":"BY_VALUE",
+    "code":"RET",
+    "typeFullName":"ANY",
+    "order":2,
+    "_label":"METHOD_RETURN",
+    "possibleTypes":[
+      
+    ]
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "_id":128849018886,
+    "evaluationStrategy":"BY_VALUE",
+    "code":"RET",
+    "typeFullName":"ANY",
+    "order":2,
+    "_label":"METHOD_RETURN",
+    "possibleTypes":[
+      
+    ]
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "_id":128849018887,
+    "evaluationStrategy":"BY_VALUE",
+    "code":"RET",
+    "typeFullName":"ANY",
+    "order":2,
+    "_label":"METHOD_RETURN",
+    "possibleTypes":[
+      
+    ]
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "_id":128849018888,
+    "evaluationStrategy":"BY_VALUE",
+    "code":"RET",
+    "typeFullName":"ANY",
+    "order":2,
+    "_label":"METHOD_RETURN",
+    "possibleTypes":[
+      
+    ]
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "_id":128849018889,
+    "evaluationStrategy":"BY_VALUE",
+    "code":"RET",
+    "typeFullName":"ANY",
+    "order":2,
+    "_label":"METHOD_RETURN",
+    "possibleTypes":[
+      
+    ]
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "_id":128849018890,
+    "evaluationStrategy":"BY_VALUE",
+    "code":"RET",
+    "typeFullName":"ANY",
+    "order":2,
+    "_label":"METHOD_RETURN",
+    "possibleTypes":[
+      
+    ]
+  },
+  {
+    "dynamicTypeHintFullName":[
+      
+    ],
+    "_id":128849018891,
+    "evaluationStrategy":"BY_VALUE",
+    "code":"RET",
+    "typeFullName":"ANY",
+    "order":2,
+    "_label":"METHOD_RETURN",
+    "possibleTypes":[
+      
+    ]
+  },
+  {
+    "name":"<global>",
+    "_id":137438953472,
+    "code":"<empty>",
+    "order":-1,
+    "_label":"NAMESPACE"
   },
   {
     "name":"<global>",

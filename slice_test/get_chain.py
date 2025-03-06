@@ -46,7 +46,7 @@ def get_method_chain(method_chain_path, vul_api_id, api_info, nodes):  # 存储�
 
     for id in vul_api_id:  # 遍历危险函数的id
         method_id = api_info[(nodes[id]["name"], id)]["callee_id"]
-        call_method_map[id] = method_id  # 使得危险函数id和其父函数id作映射
+        call_method_map[id] = method_id  # 使得危险函数id和其父函数id作映射,e.g.call_method_map{"30064771077":"111669149697"}
 
     for method in data:  # 某一个method节点被其他method节点调用的映射
         method_map[method["_1"]] = list(set(method["_2"]))  # 为了去重

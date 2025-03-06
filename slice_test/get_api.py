@@ -10,7 +10,7 @@ def get_vul_api_id(api_info):  #
     """
     vul_api_id = []
     vul_api_line = []
-    file = open("data/vul_api.txt", "r")  # api.txt是敏感函数列表
+    file = open("data/api.txt", "r")  # api.txt是敏感函数列表
     data_set = set()
     for line in file:
         line = line.strip()
@@ -28,8 +28,13 @@ def get_all_api(api_path):
         content = file.read().replace("]\n[", ",\n")  # 规范json格式
         data = json.loads(content)  # data type: list
     for api in data:
-        api_info[(api["_3"], api["_1"])] = {"id": api["_1"], "lineNumber": api["_2"], "code": api["_4"],
-                                            "arg_line": api["_5"], "arg_id": api["_6"], "callee_id": api["_7"],
+        api_info[(api["_3"], api["_1"])] = {"id": api["_1"],
+                                            "lineNumber": api["_2"],
+                                            "code": api["_4"],
+                                            "arg_line": api["_5"],
+                                            "arg_id": api["_6"],
+                                            "callee_id": api["_7"],
                                             "callee_parameter_id": api["_8"],
-                                            "name": api["_3"]}  # api["_7"] : list [100, 101, 102]
+                                            "name": api["_3"]
+                                            }  # api["_7"] : list [100, 101, 102]
     return api_info
