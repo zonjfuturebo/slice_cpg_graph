@@ -151,7 +151,7 @@ def remove_comments_c(filename):
     :return:
     """
     bds0 = '//.*'  # 标准匹配单行注释
-    bds1 = '\/\*(?:[^\*]|\*+[^\/\*])*\*+\/'  # 标准匹配多行注释  可匹配跨行注释
+    bds1 = '\/\*(?:[^\*]|\*+[^\/\*])*\*+/'  # 标准匹配多行注释  可匹配跨行注释
 
     target1 = re.compile(bds0)  # 单行注释
     targetn = re.compile(bds1)  # 编译正则表达式
@@ -172,3 +172,30 @@ def remove_comments_c(filename):
         file.write(source_code)
 
     print("注释去除完成")
+
+
+def remove_html_tag(filename):
+    """
+    移除文件中html<BR/>标签
+    :param filename: 表示要去除注释的txt语言的文件名
+    :return:
+    """
+    with open(filename, 'r', encoding='utf-8') as file:
+        content = file.read()
+        cleaned_content = re.sub(r'<BR\s*/>', ', ', content)  # 支持<BR/>、<br/>等变体
+
+    with open("data/test_cpg_txt.txt", 'w', encoding='utf-8') as file:
+        file.write(cleaned_content)
+
+    print("html去除完成")
+    return "data/test_cpg_txt.txt"
+
+def replace_html_tag(filename):
+    """
+    替换可能的html标签，包含
+    :param filename: 表示要去除注释的txt语言的文件名
+    :return:
+    """
+    with open(filename, 'r', encoding='utf-8') as file:
+        content = file.read()
+        cleaned_content = re.sub()

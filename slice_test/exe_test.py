@@ -23,6 +23,7 @@ nodes, edges = get_pdgGraph.parse_dot_content(file_path)
 # 创建pdg图
 G = get_pdgGraph.create_graph(nodes, edges)
 print(G.nodes)
+print(G.edges)
 
 # 定位漏洞函数
 call_node_api = get_api.get_all_api(api_path)
