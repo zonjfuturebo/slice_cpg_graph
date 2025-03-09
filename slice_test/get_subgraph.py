@@ -1,7 +1,9 @@
 import networkx as nx
-from exe_test import vul_api_id
 from get_cpgGraph import G
 import matplotlib.pyplot as plt
+
+
+vul_api_id = [30064771077]
 
 def dfs_slice_graph(g, vul_api_id):
     # 统一节点ID为字符串类型，并确保输入为单个节点或列表
@@ -28,6 +30,18 @@ def dfs_slice_graph(g, vul_api_id):
         backward_slices[node_id] = backward_nodes
 
     return forward_slices, backward_slices
+
+
+def extract_merged_subgraph(g, forward_slices, backward_slices):
+    # 合并所有切片节点（去重）
+    all_nodes = set()
+    for nodes in forward_slices.values():
+        all_nodes.update(nodes)
+    for nodes in backward_slices.values():
+        all_nodes.update(nodes)
+
+    # 提取子图并返回新的DiGraph对象
+    return g.subgraph(all_nodes).copy()  # 使用copy()确保返回完整图对象而非视图
 
 
 def visualize_slice(g, forward_slices, backward_slices, vul_node):
@@ -79,7 +93,10 @@ def visualize_slice(g, forward_slices, backward_slices, vul_node):
     plt.show()
 
 
+
+
+
 # 使用示例
-forward, backward = dfs_slice_graph(G, str(vul_api_id[0]))
-print(forward, backward)
-visualize_slice(G, forward, backward, vul_node=str(vul_api_id[0]))
+forward, backward = dfs_slice_graph(G, vul_api_id)
+# visualize_slice(G, forward, backward, vul_node=str(vul_api_id[0]))
+merged_graph = extract_merged_subgraph(G, forward, backward)
