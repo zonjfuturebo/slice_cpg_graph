@@ -16,14 +16,27 @@ def parse_dot_content(pdg_path):
         # sections = content.split('\n\n')  # 根据一个或多个空行划分
         # 使用正则表达式切割字符串
         digraph_blocks = re.split(r'\n(?=digraph)', content.strip())
-    method = list()  # 用来存放method节点
+
     for content in digraph_blocks:  # 对每一个函数进行操作, such as [println, func]
-        method.append(content.split()[1][1:-1])
+        pattern = re.compile(
+            r'\"(?P<node_id>\d+)\"\s*\[label\s*=\s*<'
+            r'(?P<label>[^>]+)'
+            r'>\s*\]'
+        )
+        # 查找所有匹配项
+        matches = pattern.findall(content)
+        # 打印匹配结果
+        for match in matches:
+            node_id, label = match
+            nodes.append((node_id, label))
+            print(f"Node ID: {node_id}, Label: {label}")
+
+
+
         matches = re.findall(r'(\d+)" -> "(\d+)"  \[ label = "(\w+): (.*)"\]', content)  # type: list
 
         for match in matches:
             source, target, label, code = match
-            print(source, target, label, code)
             edges.append((source, target, {"label": label, "code": code}))
 
     return nodes, edges

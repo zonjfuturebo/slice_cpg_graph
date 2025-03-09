@@ -57,11 +57,11 @@ def bfs_slices(id, direction, nodes, methods, api_info):
     q = [id]
     slices_lines = list()
     while q:
-        index = q.pop(0)  # 弹出一个元素
+        index = q.pop(0) # 弹出一个元素
         if index in flag:
             continue
         flag.add(index)
-        if nodes[index]["_label"] == "CALL" and nodes[index]["id"] != id:  # 如果节点是call类型的节点，则需要获得其参数的位置,后面的条件是防止递归调用的情况
+        if nodes[index]["_label"] == "CALL" and nodes[index]["_id"] != id:  # 如果节点是call类型的节点，则需要获得其参数的位置,后面的条件是防止递归调用的情况
             lines = api_info[(nodes[index]["name"], index)]["arg_line"].split()  # 获取实参的位置
             # 使用正则表达式提取数字 [‘some(10)‘,‘some(20)‘,‘some(30)‘] --> [10, 20, 30]
             lines = [int(re.search(r'\d+', s).group()) for s in lines]
@@ -199,7 +199,7 @@ def deal_backforward_slice(nodes, method_chain, api_info, methods, vul_api_id, p
 
     vul_api_line_name = []
     for i in vul_api_id2:
-        vul_api_line_name.append((nodes[i]["name"], nodes[i]["lineNumber"]))
+        vul_api_line_name.append((nodes[i]["name"], nodes[i]["lineNumber"], nodes[i]["_id"]))
 
     return merge_slices, vul_api_line_name
 
